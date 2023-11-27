@@ -1,4 +1,4 @@
-import { Links } from "./links";
+import { Links } from "../../modules/nfts/links";
 import type { NextPage } from "next";
 import { MetaHeader } from "~~/components/MetaHeader";
 import { Spinner } from "~~/components/Spinner";

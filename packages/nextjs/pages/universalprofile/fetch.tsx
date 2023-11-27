@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import ProfileCard from "./components/ProfileCard";
-import { Links } from "./links";
+import ProfileCard from "../../modules/universalprofile/components/ProfileCard";
+import { Links } from "../../modules/universalprofile/links";
 //import { LSPFactory, ProfileDataBeforeUpload } from "@lukso/lsp-factory.js";
 import { getAccount } from "@wagmi/core";
 import type { NextPage } from "next";
@@ -22,7 +22,7 @@ const FetchProfile: NextPage = () => {
   const [upAddress, setUpAddress] = useState("");
   const [profile, setProfile] = useState({});
 
-  const inputAddress = useRef();
+  const inputAddress = useRef<HTMLInputElement>(null);
 
   const signer = useEthersSigner();
   const provider = useEthersProvider();
@@ -60,6 +60,7 @@ const FetchProfile: NextPage = () => {
   const fetchProfile = async () => {
     // 0x0E90f7F3725d97A5E956581EEE6D8a0F51C8EfF8 - on testnet
     // 0x3E04Fd79D498e1CCC77dAAe33199b0Fe7158a059 - on testnet
+    // @ts-ignore
     const fetchedProfile = await fetchUniversalProfile(publicClient.transport, inputAddress.current.value);
     console.log(fetchedProfile);
 

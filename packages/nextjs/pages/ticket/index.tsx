@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Links } from "./links";
+import { Links } from "../../modules/ticket/links";
 import type { NextPage } from "next";
 import { useAccount } from "wagmi";
 import { BugAntIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";

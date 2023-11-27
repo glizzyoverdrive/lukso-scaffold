@@ -9,7 +9,7 @@ export const NFTCard = ({ nft }: { nft: Collectible }) => {
   const { writeAsync: transferNFT } = useScaffoldContractWrite({
     contractName: "LuksoCloneX",
     functionName: "transfer",
-    args: [nft.owner, transferToAddress, nft.tokenId as `0x${string}`, true, ""],
+    args: [nft.owner, transferToAddress, nft.tokenId as `0x${string}`, true, "" as `0x${string}`],
   });
 
   return (

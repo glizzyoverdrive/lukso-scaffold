@@ -24,7 +24,7 @@ const schema: ERC725JSONSchema[] = [
   },
 ];
 
-export function getInstance(provider, contractAddress: string, providedSchema?: ERC725JSONSchema[]) {
+export function getInstance(provider: any, contractAddress: string, providedSchema?: ERC725JSONSchema[]) {
   console.log(provider);
   const erc725 = new ERC725(providedSchema || schema, contractAddress, provider);
 

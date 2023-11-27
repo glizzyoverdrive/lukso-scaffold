@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import ProfileCard from "./components/ProfileCard";
-import { Links } from "./links";
+import ProfileCard from "../../modules/universalprofile/components/ProfileCard";
+import { Links } from "../../modules/universalprofile/links";
 //import { LSPFactory, ProfileDataBeforeUpload } from "@lukso/lsp-factory.js";
 import { getAccount } from "@wagmi/core";
 import type { NextPage } from "next";

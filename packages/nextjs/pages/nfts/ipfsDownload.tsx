@@ -1,7 +1,7 @@
 import { useState } from "react";
 import dynamic from "next/dynamic";
-import { Links } from "./links";
-import { getNFTMetadataFromIPFS } from "./utils/ipfs";
+import { Links } from "../../modules/nfts/links";
+import { getNFTMetadataFromIPFS } from "../../modules/nfts/utils/ipfs";
 import type { NextPage } from "next";
 import { MetaHeader } from "~~/components/MetaHeader";
 import { notification } from "~~/utils/scaffold-eth";

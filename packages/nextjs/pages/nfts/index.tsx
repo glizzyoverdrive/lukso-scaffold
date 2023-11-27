@@ -1,5 +1,5 @@
-import { MyHoldings } from "./components/MyHoldings";
-import { Links } from "./links";
+import { MyHoldings } from "../../modules/nfts/components/MyHoldings";
+import { Links } from "../../modules/nfts/links";
 import type { NextPage } from "next";
 import { parseEther } from "viem";
 import { useAccount } from "wagmi";

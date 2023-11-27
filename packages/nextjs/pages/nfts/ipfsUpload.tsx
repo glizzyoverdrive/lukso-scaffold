@@ -1,8 +1,8 @@
 import { useState } from "react";
 import dynamic from "next/dynamic";
-import { Links } from "./links";
-import { ipfsClient } from "./utils/ipfs";
-import nftsMetadata from "./utils/nftsMetadata";
+import { Links } from "../../modules/nfts/links";
+import { ipfsClient } from "../../modules/nfts/utils/ipfs";
+import nftsMetadata from "../../modules/nfts/utils/nftsMetadata";
 import type { NextPage } from "next";
 import { MetaHeader } from "~~/components/MetaHeader";
 import { notification } from "~~/utils/scaffold-eth";
