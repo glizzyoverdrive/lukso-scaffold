@@ -11,7 +11,8 @@ const Home: NextPage = () => {
         <div className="px-5">
           <h1 className="text-center mb-8">
             <span className="block text-2xl mb-2">Welcome to</span>
-            <span className="block text-4xl font-bold">Scaffold-ETH 2</span>
+            <span className="block text-4xl font-bold">LUKSO Scaffold 🛠️</span>
+            <span className="block text-md mt-4 mb-2">powered by 🏗 Scaffold-ETH 2</span>
           </h1>
           <p className="text-center text-lg">
             Get started by editing{" "}
@@ -20,11 +21,7 @@ const Home: NextPage = () => {
             </code>
           </p>
           <p className="text-center text-lg">
-            Edit your smart contract{" "}
-            <code className="italic bg-base-300 text-base font-bold max-w-full break-words break-all inline-block">
-              YourContract.sol
-            </code>{" "}
-            in{" "}
+            Edit your smart contracts in{" "}
             <code className="italic bg-base-300 text-base font-bold max-w-full break-words break-all inline-block">
               packages/hardhat/contracts
             </code>
