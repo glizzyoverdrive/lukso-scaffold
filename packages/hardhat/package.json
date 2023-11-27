@@ -46,6 +46,9 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
+    "@erc725/smart-contracts": "^6.0.0",
+    "@lukso/lsp-factory.js": "^3.2.1",
+    "@lukso/lsp-smart-contracts": "^0.12.1",
     "@openzeppelin/contracts": "^4.8.1",
     "dotenv": "^16.0.3",
     "envfile": "^6.18.0",
