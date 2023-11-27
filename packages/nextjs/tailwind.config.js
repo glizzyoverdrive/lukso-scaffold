@@ -2,10 +2,57 @@
 module.exports = {
   content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}", "./utils/**/*.{js,ts,jsx,tsx}"],
   plugins: [require("daisyui")],
-  darkTheme: "scaffoldEthDark",
+  darkTheme: "luksoLight",
   // DaisyUI theme colors
   daisyui: {
     themes: [
+      {
+        luksoLight: {
+          "color-scheme": "light",
+          primary: "#e96d7b",
+          secondary: "#a991f7",
+          accent: "#fe005b",
+          "accent-content": "#ffffff",
+          neutral: "#af4670",
+          "neutral-content": "#f0d6e8",
+          "base-100": "#f0d6e8",
+          "base-content": "#632c3b",
+          info: "#2563eb",
+          success: "#16a34a",
+          warning: "#d97706",
+          error: "#dc2626",
+          "--rounded-btn": "1.9rem",
+
+          ".tooltip": {
+            "--tooltip-tail": "6px",
+          },
+        },
+      },
+      {
+        luksoDark: {
+          "color-scheme": "dark",
+          primary: "#ff79c6",
+          "primary-content": "#ffffff",
+          secondary: "#bd93f9",
+          "secondary-content": "#ffffff",
+          accent: "#ffb86c",
+          "accent-content": "#ffffff",
+          neutral: "#414558",
+          "neutral-focus": "#242b33",
+          "neutral-content": "#A6ADBB",
+          "base-100": "#282a36",
+          "base-content": "#f8f8f2",
+          info: "#8be9fd",
+          success: "#50fa7b",
+          warning: "#f1fa8c",
+          error: "#ff5555",
+          "--rounded-btn": "1.9rem",
+
+          ".tooltip": {
+            "--tooltip-tail": "6px",
+          },
+        },
+      },
       {
         scaffoldEth: {
           primary: "#93BBFB",
