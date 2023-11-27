@@ -54,6 +54,12 @@ export const NETWORKS_EXTRA_DATA: Record<string, TChainAttributes> = {
   [chains.scrollSepolia.id]: {
     color: "#fbebd4",
   },
+  [42]: { // LUKSO
+    color: "#fe005b",
+  },
+  [4201]: { // LUKSO Testnet
+    color: "#fe005b",
+  },
 };
 
 /**

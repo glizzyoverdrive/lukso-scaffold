@@ -1,18 +1,11 @@
 import { connectorsForWallets } from "@rainbow-me/rainbowkit";
-import {
-  braveWallet,
-  coinbaseWallet,
-  ledgerWallet,
-  metaMaskWallet,
-  rainbowWallet,
-  safeWallet,
-  walletConnectWallet,
-} from "@rainbow-me/rainbowkit/wallets";
+import { coinbaseWallet, metaMaskWallet } from "@rainbow-me/rainbowkit/wallets";
 import * as chains from "viem/chains";
 import { configureChains } from "wagmi";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 import scaffoldConfig from "~~/scaffold.config";
+import { luksoUpWallet } from "~~/services/web3/luksoUpWallet/luksoUpWallet";
 import { burnerWalletConfig } from "~~/services/web3/wagmi-burner/burnerWalletConfig";
 import { getTargetNetwork } from "~~/utils/scaffold-eth";
 
@@ -47,16 +40,12 @@ export const appChains = configureChains(
 
 const walletsOptions = { chains: appChains.chains, projectId: scaffoldConfig.walletConnectProjectId };
 const wallets = [
+  luksoUpWallet({ ...walletsOptions, shimDisconnect: true }),
   metaMaskWallet({ ...walletsOptions, shimDisconnect: true }),
-  walletConnectWallet(walletsOptions),
-  ledgerWallet(walletsOptions),
-  braveWallet(walletsOptions),
   coinbaseWallet({ ...walletsOptions, appName: "scaffold-eth-2" }),
-  rainbowWallet(walletsOptions),
-  ...(configuredNetwork.id === chains.hardhat.id || !onlyLocalBurnerWallet
-    ? [burnerWalletConfig({ chains: [appChains.chains[0]] })]
-    : []),
-  safeWallet({ ...walletsOptions, debug: false, allowedDomains: [/gnosis-safe.io$/, /app.safe.global$/] }),
+  // ...(configuredNetwork.id === chains.hardhat.id || !onlyLocalBurnerWallet
+  //   ? [burnerWalletConfig({ chains: [appChains.chains[0]] })]
+  //   : []),
 ];
 
 /**
