@@ -1,5 +1,4 @@
 
-
 # LUKSO Scaffold 🛠️
 
 A full-stack starter for LUKSO with high fidelity examples for devs to get started and launch quickly.
@@ -40,7 +39,7 @@ This would be super useful to share and remix LUKSO full-stack dApps.
 
 ### Getting started
 
-To get started with LUKSO Scaffold, follow the steps below:
+To get started with LUKSO Scaffold 🛠️, follow the steps below:
 
 1.  Clone this repo & install dependencies
 
@@ -110,3 +109,4 @@ And last but not least
 	- _thanks to CJ42_
 
 More to come, please suggest dApps that you want to see to really interact with various LSP standards.
+
