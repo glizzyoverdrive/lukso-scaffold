@@ -18,24 +18,24 @@ export const menuLinks: HeaderMenuLink[] = [
     href: "/",
   },
   {
-    label: "My NFTs",
+    label: "LYX NFTs",
     href: "/nfts",
     icon: <PhotoIcon className="h-4 w-4" />,
   },
   {
-    label: "Universal Profile",
+    label: "UP🆙",
     href: "/universalprofile",
     icon: <UserCircleIcon className="h-4 w-4" />,
   },
   {
-    label: "LSP7 Ticket",
+    label: "Mint Tokens",
     href: "/ticket",
     icon: <TicketIcon className="h-4 w-4" />,
   },
   {
-    label: "Debug Contracts",
+    label: "Vault",
     href: "/debug",
-    icon: <BugAntIcon className="h-4 w-4" />,
+    icon: <UserCircleIcon className="h-4 w-4" />,
   },
 ];
 
@@ -103,11 +103,11 @@ export const Header = () => {
         </div>
         <Link href="/" passHref className="hidden lg:flex items-center gap-2 ml-4 mr-6 shrink-0">
           <div className="flex relative w-10 h-10">
-            <Image alt="SE2 logo" className="cursor-pointer" fill src="/logo.png" />
+
           </div>
           <div className="flex flex-col">
-            <span className="font-bold leading-tight">LUKSO Scaffold</span>
-            <span className="text-xs">LSP Dev Stack</span>
+            <span className="font-bold leading-tight">99</span>
+            <span className="text-xs">Developers</span>
           </div>
         </Link>
         <ul className="hidden lg:flex lg:flex-nowrap menu menu-horizontal px-1 gap-2">

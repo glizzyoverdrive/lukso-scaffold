@@ -14,8 +14,8 @@ type MetaHeaderProps = {
 const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/` : "/";
 
 export const MetaHeader = ({
-  title = "LUKSO Scaffold App",
-  description = "Built with LUKSO Scaffold 🛠️ and 🏗 Scaffold-ETH 2",
+  title = "99",
+  description = "99",
   image = "thumbnail.jpg",
   twitterCard = "summary_large_image",
   children,
